@@ -62,7 +62,7 @@ end
     sql = <<-CANDIS
     SELECT * FROM students WHERE grade < 12
              CANDIS
-    y = DB[:conn].execute(sql)
+    DB[:conn].execute(sql)[0]
 binding.pry
   end
 end
