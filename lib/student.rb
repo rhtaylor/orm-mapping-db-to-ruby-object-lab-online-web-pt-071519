@@ -83,9 +83,9 @@ end
       end
  end
 
-  self.first_student_in_grade_10 
-      sql = <<-LOVE 
-      SELECT * FROM students LIMIT 1 
+  self.first_student_in_grade_10
+      sql = <<-LOVE
+      SELECT * FROM students LIMIT 1
               LOVE
       DB[:conn].execute(sql)
   end
