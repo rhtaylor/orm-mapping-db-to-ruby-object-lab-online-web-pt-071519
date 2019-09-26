@@ -57,7 +57,7 @@ end
       SELECT * FROM students WHERE grade = 9
               NICE
 
-      x = DB[:conn].execute(sql)
-      binding.pry
+      DB[:conn].execute(sql)
+      
   end
 end
