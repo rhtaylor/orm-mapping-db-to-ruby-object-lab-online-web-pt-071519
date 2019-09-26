@@ -64,7 +64,7 @@ end
              CANDIS
     DB[:conn].execute(sql).map do |row|
       row
-    end.first
+    end
 
   end
 end
