@@ -52,4 +52,12 @@ end
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql)
   end
+  def self.all_students_in_grade_9 
+      sql = <<-NICE 
+      SELECT * FROM students WHERE grade = 9
+              NICE
+
+      x = DB[:conn].execute(sql) 
+      binding.pry
+  end  
 end
