@@ -56,8 +56,6 @@ end
       sql = <<-NICE
       SELECT * FROM students WHERE grade = 9
               NICE
-
       DB[:conn].execute(sql)
-
-  end
+      end
 end
