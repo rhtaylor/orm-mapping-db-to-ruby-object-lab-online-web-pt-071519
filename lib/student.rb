@@ -60,7 +60,8 @@ end
       end
   def self.students_below_12th_grade
     sql = <<-CANDIS
-
+    SELECT * FROM students WHERE grade < 12
              CANDIS
+      DB[:conn].execute(sql)
   end
 end
