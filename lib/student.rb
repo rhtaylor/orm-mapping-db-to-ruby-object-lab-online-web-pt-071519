@@ -73,9 +73,9 @@ end
     end
  end
 
- def self.first_X_students_in_grade_10(grade)
+ def self.first_X_students_in_grade_10(x)
     sql = <<-SQLL
-        SELECT * FROM students WHERE grade = ?
+        SELECT * FROM students WHERE LIMIT ?
             SQLL
       DB[:conn].execute(sql).map do |row|
         self.new_from_db(row)
