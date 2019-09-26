@@ -77,9 +77,9 @@ end
     sql = <<-SQLL
         SELECT * FROM students WHERE grade = 10 LIMIT ?
             SQLL
-      DB[:conn].execute(sql).map do |row|
+      DB[:conn].execute(sql, x).map do |row|
         binding.pry
-        self.new_from_db(row, x)
+        self.new_from_db(row)
       end
  end
 end
