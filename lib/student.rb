@@ -89,7 +89,7 @@ end
               LOVE
        DB[:conn].execute(sql).map do |row|
       y =  self.new_from_db(row)
-        binding.pry
+        y
   end
 end
 end
