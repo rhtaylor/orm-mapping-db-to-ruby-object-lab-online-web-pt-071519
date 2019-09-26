@@ -63,6 +63,6 @@ end
     SELECT * FROM students WHERE grade < 12
              CANDIS
       DB[:conn].execute(sql)
-      
+
   end
 end
