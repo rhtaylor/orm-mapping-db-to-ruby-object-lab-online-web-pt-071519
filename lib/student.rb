@@ -73,7 +73,7 @@ end
     end
  end
 
- def self.first_X_students_in_grade_10 
+ def self.first_X_students_in_grade_10
 
- end  
+ end
 end
