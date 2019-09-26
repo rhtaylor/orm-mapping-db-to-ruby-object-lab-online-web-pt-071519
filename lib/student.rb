@@ -63,8 +63,8 @@ end
     SELECT * FROM students WHERE grade < 12
              CANDIS
     DB[:conn].execute(sql).map do |row|
-      row
-      binding.pry
+      self.new_from_db(row)
+      
     end
 
   end
