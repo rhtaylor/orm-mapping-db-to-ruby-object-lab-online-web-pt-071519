@@ -88,8 +88,8 @@ end
       SELECT * FROM students WHERE grade = 10 LIMIT 1
               LOVE
        DB[:conn].execute(sql).map do |row|
-      y =  self.new_from_db(row)
-        y
+      student =  self.new_from_db(row)
+      student
   end
 end
 end
